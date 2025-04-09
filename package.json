@@ -1,8 +1,8 @@
 {
-  "name": "cpsc454",
+  "name": "backend",
   "version": "0.1.0",
   "bin": {
-    "cpsc454": "bin/cpsc454.js"
+    "cdk": "bin/cdk.js"
   },
   "scripts": {
     "build": "tsc",
