@@ -2,13 +2,14 @@ import json
 
 
 def main(event, context):
-    payload = json.loads(event["body"])
     response = {
-    'statusCode': 200,
+
+    "isBase64Encoded": False,
+    "statusCode": 200,
     "headers": {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': ["http://localhost:3000"],
-  },
-    'body': json.dumps("Hello from Lambda")
-    }
+                  "Access-Control-Allow-Origin" : "http://localhost:3000",
+                  'Content-Type': 'application/json',
+                },
+    "body": json.dumps("Hello from lambda")
+}
     return response
